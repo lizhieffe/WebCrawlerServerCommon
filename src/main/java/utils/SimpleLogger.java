@@ -15,7 +15,7 @@ public class SimpleLogger {
 	}
 	
 	public static void logServiceStartSucceed(String service) {
-//        Logger.info(service + " starts successfully");
+        info(service + " starts successfully");
 	}
 	
 	public static void logServiceStartSucceed(IService service) {
@@ -23,7 +23,7 @@ public class SimpleLogger {
 	}
 	
 	public static void logServiceStartFail(String service) {
-//        Logger.info(service + " starts failed");
+        info(service + " starts failed");
 	}
 	
 	public static void logServiceStartFail(IService service) {
@@ -31,7 +31,7 @@ public class SimpleLogger {
 	}
 	
 	public static void logServiceAlreadyStarted(String service) {
-//        Logger.info(service + " has already started");
+        info(service + " has already started");
 	}
 	
 	public static void logServiceAlreadyStarted(IService service) {
@@ -39,7 +39,7 @@ public class SimpleLogger {
 	}
 	
 	public static void logServiceStopSucceed(String service) {
-//        Logger.info(service + " stops successfully");
+        info(service + " stops successfully");
 	}
 	
 	public static void logServiceStopSucceed(IService service) {
@@ -47,7 +47,7 @@ public class SimpleLogger {
 	}
 	
 	public static void logServiceStopFail(String service) {
-//        Logger.info(service + " stops failed");
+        info(service + " stops failed");
 	}
 	
 	public static void logServiceStopFail(IService service) {
