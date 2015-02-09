@@ -1,13 +1,13 @@
 package utils;
 
-import com.sun.istack.internal.logging.Logger;
+import org.apache.log4j.Logger;
 
 import interfaces.IService;
 
 public class SimpleLogger {
 	
 	public static void info(String message) {
-		Logger.getLogger(null).info("[" + TimeUtil.getUnixTime() + "] " + message);
+		Logger.getLogger("").info("[" + TimeUtil.getUnixTime() + "] " + message);
 	}
 	
 	public static void info(Class<?> cla, String message) {
