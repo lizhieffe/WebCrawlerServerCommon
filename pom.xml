@@ -6,7 +6,7 @@
     <artifactId>web-crawler-server-common</artifactId>
     <packaging>jar</packaging>
     <version>0.1.0</version>
-
+    
     <dependencies>
         <dependency>
             <groupId>log4j</groupId>
@@ -40,4 +40,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
