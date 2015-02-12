@@ -1,23 +1,23 @@
-package services;
+package daemons;
 
-import interfaces.IThreadPoolService;
+import interfaces.IThreadPoolDaemon;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import utils.SimpleLogger;
 
-public class ThreadPoolService implements IThreadPoolService {
-	private static ThreadPoolService instance;
+public class ThreadPoolDaemon implements IThreadPoolDaemon {
+	private static ThreadPoolDaemon instance;
 	private ExecutorService es;
 	
-	private ThreadPoolService() {
-		es = Executors.newFixedThreadPool(50);
+	private ThreadPoolDaemon() {
+		es = Executors.newCachedThreadPool();
 	}
 	
-	public static ThreadPoolService getInstance() {
+	public static ThreadPoolDaemon getInstance() {
 		if (instance == null)
-			instance = new ThreadPoolService();
+			instance = new ThreadPoolDaemon();
 		return instance;
 	}
 	

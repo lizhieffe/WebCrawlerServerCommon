@@ -2,7 +2,7 @@ package utils;
 
 import org.apache.log4j.Logger;
 
-import interfaces.IService;
+import interfaces.IDaemon;
 
 public class SimpleLogger {
 	
@@ -18,7 +18,7 @@ public class SimpleLogger {
         info(service + " starts successfully");
 	}
 	
-	public static void logServiceStartSucceed(IService service) {
+	public static void logServiceStartSucceed(IDaemon service) {
 		logServiceStartSucceed(service.getClass().getName());
 	}
 	
@@ -26,7 +26,7 @@ public class SimpleLogger {
         info(service + " starts failed");
 	}
 	
-	public static void logServiceStartFail(IService service) {
+	public static void logServiceStartFail(IDaemon service) {
 		logServiceStartFail(service.getClass().getName());
 	}
 	
@@ -34,7 +34,7 @@ public class SimpleLogger {
         info(service + " has already started");
 	}
 	
-	public static void logServiceAlreadyStarted(IService service) {
+	public static void logServiceAlreadyStarted(IDaemon service) {
 		logServiceAlreadyStarted(service.getClass().getName());
 	}
 	
@@ -42,7 +42,7 @@ public class SimpleLogger {
         info(service + " stops successfully");
 	}
 	
-	public static void logServiceStopSucceed(IService service) {
+	public static void logServiceStopSucceed(IDaemon service) {
 		logServiceStopSucceed(service.getClass().getName());
 	}
 	
@@ -50,7 +50,7 @@ public class SimpleLogger {
         info(service + " stops failed");
 	}
 	
-	public static void logServiceStopFail(IService service) {
+	public static void logServiceStopFail(IDaemon service) {
 		logServiceStopFail(service.getClass().getName());
 	}
 }
