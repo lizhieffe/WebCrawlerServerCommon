@@ -28,7 +28,9 @@ public class AppProperties {
 		String fileName = "application.properties";
 		ClassLoader classLoader = getClass().getClassLoader();
 		File file = new File(classLoader.getResource(fileName).getFile());
-		try (Scanner scanner = new Scanner(file)) {
+		Scanner scanner = null;
+		try {
+			scanner = new Scanner(file);
 			while (scanner.hasNextLine()) {
 				String line = scanner.nextLine();
 				String[] parts = line.split("=");
