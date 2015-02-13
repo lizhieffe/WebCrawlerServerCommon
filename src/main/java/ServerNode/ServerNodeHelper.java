@@ -37,6 +37,7 @@ public class ServerNodeHelper {
 	
 	public static String constructHost(String ip, int port) {
 		StringBuilder builder = new StringBuilder();
+		builder.append("http://");
 		builder.append(ip);
 		builder.append(":");
 		builder.append(port);
