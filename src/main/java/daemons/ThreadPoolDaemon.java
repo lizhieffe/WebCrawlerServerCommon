@@ -37,4 +37,8 @@ public class ThreadPoolDaemon implements IThreadPoolDaemon {
 		else
 			SimpleLogger.logServiceStopFail(this.getClass().getName());
 	}
+	
+	public ExecutorService getExecutorService() {
+		return this.es;
+	}
 }
