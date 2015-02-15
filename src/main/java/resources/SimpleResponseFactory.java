@@ -9,8 +9,8 @@ public class SimpleResponseFactory {
 		response.getError().setType("");
 		response.getError().setMessage("");
 		
-//		response.setResponse(new RResponse());
-//		response.getResponse().setIs_succeed(true);
+		response.setResponse(new RResponse());
+		response.getResponse().setIs_succeed(true);
 		
 		return response;
 	}
@@ -23,8 +23,8 @@ public class SimpleResponseFactory {
 		response.getError().setType("");
 		response.getError().setMessage("");
 		
-//		response.setResponse(new RResponse());
-//		response.getResponse().setIs_succeed(false);
+		response.setResponse(new RResponse());
+		response.getResponse().setIs_succeed(false);
 		
 		return response;
 	}
@@ -37,8 +37,8 @@ public class SimpleResponseFactory {
 		response.getError().setType(type);
 		response.getError().setMessage(message);
 		
-//		response.setResponse(new RResponse());
-//		response.getResponse().setIs_succeed(false);
+		response.setResponse(new RResponse());
+		response.getResponse().setIs_succeed(false);
 		
 		return response;
 	}
