@@ -1,6 +1,6 @@
-package Job;
+package com.zl.jobs;
 
-import resources.RWebCrawlingJob;
+import com.zl.resources.RWebCrawlingJob;
 
 public class WebCrawlingJobFactory {
 	

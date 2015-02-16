@@ -1,6 +1,6 @@
-package abstracts;
+package com.zl.abstracts;
 
-import utils.StringUtil;
+import com.zl.utils.StringUtil;
 
 abstract public class AResource {
 	@Override

@@ -1,8 +1,7 @@
-package ServerNode;
+package com.zl.server.nodes;
 
 import com.zl.interfaces.IServerNode;
-
-import utils.ConfigUtil;
+import com.zl.utils.ConfigUtil;
 
 public class MasterNode implements IServerNode {
 

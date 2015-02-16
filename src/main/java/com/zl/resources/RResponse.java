@@ -1,4 +1,4 @@
-package resources;
+package com.zl.resources;
 
 public class RResponse {
 	private boolean is_succeed;

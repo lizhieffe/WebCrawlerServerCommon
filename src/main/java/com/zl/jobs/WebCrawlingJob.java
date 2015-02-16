@@ -1,8 +1,9 @@
-package Job;
+package com.zl.jobs;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import abstracts.AJob;
+
+import com.zl.abstracts.AJob;
 
 public class WebCrawlingJob extends AJob {
 	

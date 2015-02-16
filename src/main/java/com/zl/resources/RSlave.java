@@ -1,6 +1,6 @@
-package resources;
+package com.zl.resources;
 
-import abstracts.AResource;
+import com.zl.abstracts.AResource;
 
 public class RSlave extends AResource {
 	private String ip;

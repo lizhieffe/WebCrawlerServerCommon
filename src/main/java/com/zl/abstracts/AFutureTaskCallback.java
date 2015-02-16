@@ -1,8 +1,7 @@
-package abstracts;
-
-import utils.SimpleLogger;
+package com.zl.abstracts;
 
 import com.google.common.util.concurrent.FutureCallback;
+import com.zl.utils.SimpleLogger;
 
 public class AFutureTaskCallback<T> implements FutureCallback<T> {
 	@Override

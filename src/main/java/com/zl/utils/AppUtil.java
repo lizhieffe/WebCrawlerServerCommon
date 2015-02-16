@@ -1,4 +1,4 @@
-package utils;
+package com.zl.utils;
 
 public class AppUtil {
 

@@ -1,4 +1,4 @@
-package utils;
+package com.zl.utils;
 
 import org.apache.log4j.Logger;
 

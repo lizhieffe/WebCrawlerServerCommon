@@ -1,6 +1,6 @@
-package resources;
+package com.zl.resources;
 
-import abstracts.AJob;
+import com.zl.abstracts.AJob;
 
 public class RWebCrawlingJob extends AJob {
 	private String url;

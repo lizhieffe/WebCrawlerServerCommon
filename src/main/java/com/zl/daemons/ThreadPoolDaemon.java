@@ -6,8 +6,7 @@ import java.util.concurrent.Executors;
 import org.springframework.stereotype.Component;
 
 import com.zl.interfaces.IThreadPoolDaemon;
-
-import utils.SimpleLogger;
+import com.zl.utils.SimpleLogger;
 
 @Component
 public class ThreadPoolDaemon implements IThreadPoolDaemon {

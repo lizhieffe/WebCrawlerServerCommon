@@ -1,6 +1,6 @@
 package com.zl.interfaces;
 
-import abstracts.AJob;
+import com.zl.abstracts.AJob;
 
 public interface IJobManager {
 	public abstract boolean addJob(AJob job);

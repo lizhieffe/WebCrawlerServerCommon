@@ -1,6 +1,6 @@
 package com.zl.interfaces;
 
-import abstracts.AFutureTaskCallback;
+import com.zl.abstracts.AFutureTaskCallback;
 
 public interface IFutureTask <T> {
 //	public void start();

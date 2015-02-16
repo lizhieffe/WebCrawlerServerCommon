@@ -1,4 +1,4 @@
-package Job;
+package com.zl.jobs;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;

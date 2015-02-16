@@ -1,6 +1,6 @@
-package resources;
+package com.zl.resources;
 
-import utils.StringUtil;
+import com.zl.utils.StringUtil;
 
 public class RSimpleResponse {
 	private RResponse response;

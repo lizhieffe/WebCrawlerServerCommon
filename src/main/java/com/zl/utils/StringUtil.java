@@ -1,4 +1,4 @@
-package utils;
+package com.zl.utils;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.ObjectWriter;

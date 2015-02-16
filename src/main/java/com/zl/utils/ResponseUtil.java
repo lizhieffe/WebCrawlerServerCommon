@@ -1,9 +1,9 @@
-package utils;
+package com.zl.utils;
 
 import org.json.JSONException;
 import org.springframework.http.ResponseEntity;
 
-import utils.StringUtil;
+import com.zl.utils.StringUtil;
 
 public class ResponseUtil {
 	public static boolean isSuccess(ResponseEntity<String> response) {

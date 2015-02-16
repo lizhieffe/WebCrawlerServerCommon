@@ -1,15 +1,14 @@
-package abstracts;
+package com.zl.abstracts;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import utils.ResponseUtil;
-import utils.SimpleLogger;
-
 import com.zl.factories.RestTemplateFactory;
 import com.zl.interfaces.IService;
+import com.zl.utils.ResponseUtil;
+import com.zl.utils.SimpleLogger;
 
 abstract public class AService implements IService {
 	

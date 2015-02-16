@@ -1,4 +1,4 @@
-package ServerNode;
+package com.zl.server.nodes;
 
 public class SlaveNode {
 	private String ip;

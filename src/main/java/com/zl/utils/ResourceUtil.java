@@ -1,11 +1,11 @@
-package utils;
+package com.zl.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import resources.RSlave;
-import resources.RSlaves;
-import ServerNode.SlaveNode;
+import com.zl.resources.RSlave;
+import com.zl.resources.RSlaves;
+import com.zl.server.nodes.SlaveNode;
 
 public class ResourceUtil {
 	public static RSlave convertToRSlave(SlaveNode node) {
