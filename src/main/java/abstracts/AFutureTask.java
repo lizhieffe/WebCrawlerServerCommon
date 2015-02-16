@@ -1,7 +1,5 @@
 package abstracts;
 
-import interfaces.IFutureTask;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 
@@ -9,6 +7,7 @@ import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
+import com.zl.interfaces.IFutureTask;
 
 abstract public class AFutureTask <T> implements IFutureTask <T> {
 	

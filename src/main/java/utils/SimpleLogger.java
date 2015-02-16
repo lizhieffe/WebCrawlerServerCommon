@@ -2,7 +2,7 @@ package utils;
 
 import org.apache.log4j.Logger;
 
-import interfaces.IDaemon;
+import com.zl.interfaces.IDaemon;
 
 public class SimpleLogger {
 	

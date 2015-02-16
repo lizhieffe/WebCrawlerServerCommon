@@ -1,4 +1,4 @@
-package interfaces;
+package com.zl.interfaces;
 
 import abstracts.AFutureTaskCallback;
 

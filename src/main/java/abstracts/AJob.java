@@ -1,7 +1,8 @@
 package abstracts;
 
+import com.zl.interfaces.IJobManager;
+
 import utils.StringUtil;
-import interfaces.IJobManager;
 
 public abstract class AJob {
 	private static int globalCount = 0;

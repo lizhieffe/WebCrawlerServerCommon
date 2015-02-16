@@ -1,4 +1,4 @@
-package interfaces;
+package com.zl.interfaces;
 
 public interface IDaemon {
 	public void start(IThreadPoolDaemon threadPoolService);

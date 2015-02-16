@@ -1,4 +1,4 @@
-package interfaces;
+package com.zl.interfaces;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;

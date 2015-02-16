@@ -1,7 +1,5 @@
 package abstracts;
 
-import interfaces.IService;
-
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +9,7 @@ import utils.ResponseUtil;
 import utils.SimpleLogger;
 
 import com.zl.factories.RestTemplateFactory;
+import com.zl.interfaces.IService;
 
 abstract public class AService implements IService {
 	

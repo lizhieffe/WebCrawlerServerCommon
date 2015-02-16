@@ -1,11 +1,11 @@
 package com.zl.daemons;
 
-import interfaces.IThreadPoolDaemon;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.springframework.stereotype.Component;
+
+import com.zl.interfaces.IThreadPoolDaemon;
 
 import utils.SimpleLogger;
 

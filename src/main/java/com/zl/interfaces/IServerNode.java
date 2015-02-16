@@ -1,4 +1,4 @@
-package interfaces;
+package com.zl.interfaces;
 
 public interface IServerNode {
 	public void setIp(String ip);
