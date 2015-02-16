@@ -1,6 +1,8 @@
 package resources;
 
-public class RSlave {
+import abstracts.AResource;
+
+public class RSlave extends AResource {
 	private String ip;
 	private int port;
 	

@@ -1,6 +1,6 @@
 package interfaces;
 
 public interface IFutureTaskCallback <T> {
-	public void onFinish(T result);
-	public void onInterrupted(Throwable thrown);
+	public void onSuccess(T result);
+	public void onFailure(Throwable thrown);
 }

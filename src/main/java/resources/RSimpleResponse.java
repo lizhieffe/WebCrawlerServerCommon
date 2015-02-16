@@ -1,5 +1,7 @@
 package resources;
 
+import utils.StringUtil;
+
 public class RSimpleResponse {
 	private RResponse response;
 	private RError error;
@@ -18,6 +20,11 @@ public class RSimpleResponse {
 	
 	public void setError(RError error) {
 		this.error = error;
+	}
+	
+	@Override
+	public String toString() {
+		return StringUtil.objToString(this);
 	}
 }
 

@@ -1,5 +1,6 @@
 package abstracts;
 
+import utils.StringUtil;
 import interfaces.IJobManager;
 
 public abstract class AJob {
@@ -21,5 +22,10 @@ public abstract class AJob {
 	
 	public IJobManager getJobManager() {
 		return manager;
+	}
+	
+	@Override
+	public String toString() {
+		return StringUtil.objToString(this);
 	}
 }

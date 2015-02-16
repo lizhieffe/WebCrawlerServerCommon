@@ -1,17 +1,20 @@
-package daemons;
+package com.zl.daemons;
 
 import interfaces.IThreadPoolDaemon;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import org.springframework.stereotype.Component;
+
 import utils.SimpleLogger;
 
+@Component
 public class ThreadPoolDaemon implements IThreadPoolDaemon {
 	private static ThreadPoolDaemon instance;
 	private ExecutorService es;
 	
-	private ThreadPoolDaemon() {
+	public ThreadPoolDaemon() {
 		es = Executors.newCachedThreadPool();
 	}
 	
