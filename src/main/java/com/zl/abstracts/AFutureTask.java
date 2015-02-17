@@ -1,7 +1,7 @@
 package com.zl.abstracts;
 
 import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -12,10 +12,13 @@ import com.zl.interfaces.IFutureTask;
 abstract public class AFutureTask <T> implements IFutureTask <T> {
 	
 	protected Callable <T> callable;
-	protected ListeningExecutorService service;
+	protected static ListeningExecutorService service;
 	
-	public AFutureTask(ExecutorService es) {
-		this.service = MoreExecutors.listeningDecorator(es);
+	{
+		service = MoreExecutors.listeningDecorator(Executors.newFixedThreadPool(50));
+	}
+	
+	public AFutureTask() {
 	}
 	
 //	@Override
