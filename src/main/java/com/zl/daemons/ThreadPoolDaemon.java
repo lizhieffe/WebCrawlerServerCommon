@@ -14,7 +14,8 @@ public class ThreadPoolDaemon implements IThreadPoolDaemon {
 	private ExecutorService es;
 	
 	public ThreadPoolDaemon() {
-		es = Executors.newCachedThreadPool();
+//		es = Executors.newCachedThreadPool();
+		es = Executors.newFixedThreadPool(50);
 	}
 	
 	public static ThreadPoolDaemon getInstance() {
