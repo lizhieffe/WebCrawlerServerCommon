@@ -11,7 +11,7 @@ public class RestTemplateFactory {
 	}
 	
 	private static HttpComponentsClientHttpRequestFactory factoryWithTimeout;
-	private static int timeout = 2000;
+	private static int timeout = 20000;
 
 	synchronized private static ClientHttpRequestFactory getFactoryWithTimeout() {
 		if (factoryWithTimeout == null) {

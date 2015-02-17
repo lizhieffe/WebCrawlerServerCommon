@@ -14,6 +14,14 @@ public class SimpleLogger {
 		Logger.getLogger(cla).info("[" + TimeUtil.getUnixTime() + "] " + message);
 	}
 	
+	public static void error(String message) {
+		Logger.getLogger("").error("[" + TimeUtil.getUnixTime() + "] " + message);
+	}
+	
+	public static void error(Class<?> cla, String message) {
+		Logger.getLogger(cla).error("[" + TimeUtil.getUnixTime() + "] " + message);
+	}
+	
 	public static void logServiceStartSucceed(String service) {
         info(service + " starts successfully");
 	}

@@ -14,8 +14,8 @@ abstract public class AFutureTask <T> implements IFutureTask <T> {
 	protected Callable <T> callable;
 	protected static ListeningExecutorService service;
 	
-	{
-		service = MoreExecutors.listeningDecorator(Executors.newFixedThreadPool(50));
+	static {
+		service = MoreExecutors.listeningDecorator(Executors.newFixedThreadPool(10));
 	}
 	
 	public AFutureTask() {
