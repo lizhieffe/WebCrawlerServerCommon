@@ -8,14 +8,25 @@ import com.google.common.util.concurrent.ListenableFuture;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.zl.interfaces.IFutureTask;
+import com.zl.utils.AppProperties;
 
 abstract public class AFutureTask <T> implements IFutureTask <T> {
+	
+	private static int DEFAULT_MAX_THREADS = 50;
 	
 	protected Callable <T> callable;
 	protected static ListeningExecutorService service;
 	
 	static {
-		service = MoreExecutors.listeningDecorator(Executors.newFixedThreadPool(10));
+		int maxThreads;
+		try {
+			maxThreads = Integer.parseInt(AppProperties.getInstance().get("task.max-threads"));
+		}
+		catch (NumberFormatException ex) {
+			maxThreads = DEFAULT_MAX_THREADS;
+		}
+		
+		service = MoreExecutors.listeningDecorator(Executors.newFixedThreadPool(maxThreads));
 	}
 	
 	public AFutureTask() {
