@@ -1,5 +1,7 @@
 package com.zl.abstracts;
 
+import java.util.Random;
+
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +15,7 @@ import com.zl.utils.SimpleLogger;
 abstract public class AService implements IService {
 	
 	protected RestTemplate restTemplate;
+	private static Random rand = new Random(47);
 
 	public AService() {
 		this.restTemplate = RestTemplateFactory.getRestTemplateWithTimeout();
@@ -20,6 +23,13 @@ abstract public class AService implements IService {
 	
 	@Override
 	public void start() {
+		try {
+			Thread.sleep(rand.nextInt(500));
+		}
+		catch (InterruptedException ex) {
+			SimpleLogger.info(ex.toString());
+		}
+		
 		String url = constructRequestUrl();
 		HttpEntity<String> entity = constructRequestHttpEntity();
 		
